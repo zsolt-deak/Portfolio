@@ -1,7 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
-import profileimage from '../assets/earth.png'
 
 const Home = () => {
   return (
