@@ -22,7 +22,7 @@ const Work = () => {
         </div>
 
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 z-10">
           {/* Grid Item */}
           <div
             style={{ backgroundImage: `url(${calculator})` }}
@@ -215,7 +215,7 @@ const Work = () => {
                 Portfolio website
               </span>
               <p className="text-l font-bold text-white tracking-wider text-center">
-                This website was made with React and Tailwindcss
+                This website was made with React and Tailwind css
               </p>
               <div className="pt-8 text-center">
               <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg ">

@@ -15,10 +15,11 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-end items-center px-4 backdrop-blur text-[#afb9d6] z-15 border-b-4 border-b-[#61892f]">
+    <div className="md:h-[80px] fixed w-full h-[65px] flex justify-end items-center px-4 backdrop-blur text-[#afb9d6] border-b-4 border-b-[#61892f] z-50 ">
       {/* / menu */}
       <ul className="hidden md:flex text-3xl">
         {/* ul hidden if the screen is smaller than mg(medium) */}
+        
         <li
           id="glitchEffect"
           className="before:content-['<'] after:content-['>']"
@@ -105,8 +106,9 @@ const Navbar = () => {
       </ul>
 
       {/*  social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[20vh] left-0">
-        <li className="w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#0077b5]">
+      <div className="hidden lg:flex fixed flex-col sm:right-0 left-0 lg:top-[20vh] ">
+      
+        <li className="lg:w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#0077b5]">
           <a
             className="flex justify-between items-center w-full text-[#ccd6f6]"
             target="_blank"

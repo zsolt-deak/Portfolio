@@ -8,7 +8,7 @@ const Home = () => {
       {/* Container */}
 
       <div className="max-w-[1000px] mx-auto px-16 flex flex-col justify-center h-full">
-        <p className="text-[#909c82]">Hi, my name is</p>
+        <p className="text-[#909c82] text-2xl">Hi, my name is</p>
         <h1 id='glitchEffect' className="text-4xl sm:text-7xl font-bold text-[#61892f]">
           Deák Zsolt
         </h1>
