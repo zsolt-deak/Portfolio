@@ -4,9 +4,9 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaRegFileCode,
   FaWhatsapp,
 } from "react-icons/fa";
+import { ImProfile } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
 import CV from "../assets/DeakZsolt_CV.pdf";
@@ -16,10 +16,12 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="md:h-[80px] fixed w-full h-[65px] flex justify-end items-center px-4 backdrop-blur text-[#afb9d6] border-b-4 border-b-[#61892f] z-50 ">
+    
+    <div className="md:h-[80px] bg-gradient-to-b from-[#60892fa8] via-transparent to-transparent fixed w-full h-[65px] flex justify-end items-center px-4 backdrop-blur text-[#afb9d6] border-b-2 border-b-[#61892f] z-50 ">
       {/* / menu */}
-      <ul className="hidden md:flex text-3xl">
-        {/* ul hidden if the screen is smaller than mg(medium) */}
+      
+      <ul className="hidden sm:flex text-3xl">
+        {/* ul hidden if the screen is smaller than sm(small) */}
 
         <li
           id="glitchEffect"
@@ -54,9 +56,12 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+    
+
+   
 
       {/*  hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="sm:hidden z-10">
         {" "}
         {/* hamburger visible if the screen is smaller than md */}
         {!nav ? <FaBars size={40} /> : <FaTimes size={40} />}{" "}
@@ -107,59 +112,52 @@ const Navbar = () => {
       </ul>
 
       {/*  social icons */}
-      <div className="hidden lg:flex fixed flex-col sm:right-0 left-0 lg:top-[20vh] ">
-        <li className="lg:w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#0077b5]">
+      <div className="hidden md:flex fixed flex-col sm:right-0 left-0 top-[30vh]">
+        <li className="md:w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#0077b5] backdrop-blur">
           <a
-            className="flex justify-between items-center w-full text-[#ccd6f6] "
+            className="flex justify-between items-center w-full text-[#ccd6f6]"
             target="_blank"
-            href="https://www.linkedin.com/in/deak-zsolt"
-          >
-            LinkedIn
-            <FaLinkedin size={30} />
+            href="https://www.linkedin.com/in/deak-zsolt">
+            LinkedIn<FaLinkedin size={30} />
           </a>
         </li>
         <li className="w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#171515]">
           <a
-            className="flex justify-between items-center w-full text-[#ccd6f6] "
+            className="flex justify-between items-center w-full text-[#ccd6f6]"
             target="_blank"
-            href="https://github.com/zsolt-deak"
-          >
-            GitHub
-            <FaGithub size={30} />
+            href="https://github.com/zsolt-deak">
+            GitHub<FaGithub size={30} />
           </a>
         </li>
 
         <li className="w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#bd2619]">
           <a
-            className="flex justify-between items-center w-full text-[#ccd6f6] "
-            href="mailto:zsolt.deak.dev@gmail.com"
-          >
-            Email
-            <HiOutlineMail size={30} />
+            className="flex justify-between items-center w-full text-[#ccd6f6]"
+            href="mailto:zsolt.deak.dev@gmail.com">
+            Email<HiOutlineMail size={30} />
           </a>
         </li>
 
-        <li className="w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[-0px] duration-300 bg-[#3a7700]">
+        <li className="w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[-0px] duration-300 bg-[#918e10]">
           <a
-            className="flex justify-between items-center w-full text-gray-300 "
+            className="flex justify-between items-center w-full text-gray-300"
             target="_blank"
             href={CV}
-            download="My_CV.pdf"
-          >
-            Resume
-            <FaRegFileCode size={30} />
+            download="My_CV.pdf">
+            Resume<ImProfile size={30} />
           </a>
         </li>
 
         <li className="w-[190px] h-[60px] flex justify-between items-center ml-[-130px] hover:ml-[0px] duration-300 bg-[#128c7e]">
-          <a className="flex justify-between items-center w-full text-gray-300 font-bold">
-            +40 773 943 139
-            <FaWhatsapp size={30} />
+          <a className="flex justify-between items-center w-full text-gray-300 font-bold"
+              href="tel:+40773943139">
+            +40 773 943 139<FaWhatsapp size={30} />
           </a>
         </li>
+
       </div>
 
-      {/* Contact bar */}
+      
     </div>
   );
 };
