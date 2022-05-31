@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaRegFileCode,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
@@ -19,7 +20,7 @@ const Navbar = () => {
       {/* / menu */}
       <ul className="hidden md:flex text-3xl">
         {/* ul hidden if the screen is smaller than mg(medium) */}
-        
+
         <li
           id="glitchEffect"
           className="before:content-['<'] after:content-['>']"
@@ -107,10 +108,9 @@ const Navbar = () => {
 
       {/*  social icons */}
       <div className="hidden lg:flex fixed flex-col sm:right-0 left-0 lg:top-[20vh] ">
-      
         <li className="lg:w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#0077b5]">
           <a
-            className="flex justify-between items-center w-full text-[#ccd6f6]"
+            className="flex justify-between items-center w-full text-[#ccd6f6] "
             target="_blank"
             href="https://www.linkedin.com/in/deak-zsolt"
           >
@@ -120,7 +120,7 @@ const Navbar = () => {
         </li>
         <li className="w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#171515]">
           <a
-            className="flex justify-between items-center w-full text-[#ccd6f6]"
+            className="flex justify-between items-center w-full text-[#ccd6f6] "
             target="_blank"
             href="https://github.com/zsolt-deak"
           >
@@ -131,7 +131,7 @@ const Navbar = () => {
 
         <li className="w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#bd2619]">
           <a
-            className="flex justify-between items-center w-full text-[#ccd6f6]"
+            className="flex justify-between items-center w-full text-[#ccd6f6] "
             href="mailto:zsolt.deak.dev@gmail.com"
           >
             Email
@@ -139,17 +139,27 @@ const Navbar = () => {
           </a>
         </li>
 
-        <li className="w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[0px] duration-300 bg-[#3a7700]">
-        <a
-            className="flex justify-between items-center w-full text-gray-300"
+        <li className="w-[140px] h-[60px] flex justify-between items-center ml-[-80px] hover:ml-[-0px] duration-300 bg-[#3a7700]">
+          <a
+            className="flex justify-between items-center w-full text-gray-300 "
             target="_blank"
             href={CV}
-            download="My_CV.pdf" >
+            download="My_CV.pdf"
+          >
             Resume
             <FaRegFileCode size={30} />
           </a>
         </li>
+
+        <li className="w-[190px] h-[60px] flex justify-between items-center ml-[-130px] hover:ml-[0px] duration-300 bg-[#128c7e]">
+          <a className="flex justify-between items-center w-full text-gray-300 font-bold">
+            +40 773 943 139
+            <FaWhatsapp size={30} />
+          </a>
+        </li>
       </div>
+
+      {/* Contact bar */}
     </div>
   );
 };

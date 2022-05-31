@@ -18,11 +18,7 @@ const About = () => {
           </div>
           <div>
             <p>
-              I a passionate about Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Tempore non reprehenderit delectus ipsum,
-              accusamus, excepturi maxime ratione saepe omnis suscipit eveniet
-              ipsam nam voluptatum quidem esse dicta ex quod nulla? In voluptas,
-              consequuntur dolor eligendi ut debitis. Corporis, quidem quisquam?
+              
             </p>
           </div>
         </div>

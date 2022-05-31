@@ -13,7 +13,7 @@ const Home = () => {
           Deák Zsolt
         </h1>
         <h2 className="text-3xl sm:text-6xl font-bold text-[#7a857a]">
-          I'm a front-end developer.
+          I'm a front-end developer
         </h2>
         <div class="w-[50%] h-[6px]  bg-gradient-to-r from-[#1a1a1d] via-[#60892f77] to-[#1a1a1d]"></div>
 
