@@ -34,7 +34,7 @@ const Socialbar = () => {
             <a
             target="_blank"
             href={CV}
-            download="My_CV.pdf">
+            download="DeakZsolt_CV.pdf">
             <ImProfile size={35}/>
             </a>
         </li>

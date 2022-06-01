@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import Fade from 'react-reveal/Fade'; 
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
           I'm a front-end developer
         </h2>
         <div class="w-[50%] h-[6px]  bg-gradient-to-r from-[#1a1a1d] via-[#60892f77] to-[#1a1a1d]"></div>
-        
+        <Fade top cascade duration={2200}>
         <p className="text-[#afb9d6] py-4 max-w-[700px] lg:grid-cols-2">
           A passionate software developer opened for a new professional
           challenge and ready to take on responsibilities. Reliable team member
@@ -24,7 +25,7 @@ const Home = () => {
           decision-making mindset, and excellent interpersonal skills. I am
           seeking to be employed in a company where I can add value using my
           skills and my previous professional experience.
-        </p>
+        </p></Fade>
 
         <div>
           <Link to="work" smooth={true} duration={1000}>

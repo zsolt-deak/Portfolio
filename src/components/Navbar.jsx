@@ -117,6 +117,7 @@ const Navbar = () => {
           <a
             className="flex justify-between items-center w-full text-[#ccd6f6]"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/deak-zsolt">
             LinkedIn<FaLinkedin size={30} />
           </a>
@@ -125,6 +126,7 @@ const Navbar = () => {
           <a
             className="flex justify-between items-center w-full text-[#ccd6f6]"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/zsolt-deak">
             GitHub<FaGithub size={30} />
           </a>
@@ -142,8 +144,9 @@ const Navbar = () => {
           <a
             className="flex justify-between items-center w-full text-gray-300"
             target="_blank"
+            rel="noopener noreferrer"
             href={CV}
-            download="My_CV.pdf">
+            download="DeakZsolt_CV.pdf">
             Resume<ImProfile size={30} />
           </a>
         </li>

@@ -6,6 +6,8 @@ import calculator from "../assets/calculator.png";
 import onlineStore from "../assets/onlineStore.png";
 import portfolio from "../assets/portfolio.png";
 import { FaGithub, FaPlay } from "react-icons/fa";
+import Fade from 'react-reveal/Fade'; 
+import Zoom from 'react-reveal/Zoom';
 
 const Work = () => {
   return (
@@ -14,15 +16,15 @@ const Work = () => {
       className="w-full md:pt-[20vh] pb-[20vh] text-[#afb9d6] bg-[#1a1a1d]"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+      <Fade left duration={1500}><div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-[#afb9d6] border-[#61892f]">
             Work
           </p>
           <p className="py-6">// Check out some of my recent work</p>
-        </div>
+        </div></Fade>
 
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 z-10">
+        <Zoom right cascade duration={1000}><div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 z-10">
           {/* Grid Item */}
           <div
             style={{ backgroundImage: `url(${calculator})` }}
@@ -43,6 +45,7 @@ const Work = () => {
                     <a
                       className="flex justify-between items-center w-full text-[#171515]"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/zsolt-deak/Calculator">
                       View on GitHub
                       <FaGithub size={30} />
@@ -53,6 +56,7 @@ const Work = () => {
                     <a
                       className="flex justify-between items-center w-full text-[#171515]"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://deakzsolt-calculator.netlify.app">
                         Try it!
                       <FaPlay size={20} />
@@ -90,6 +94,7 @@ const Work = () => {
                     <a
                       className="flex justify-between items-center w-full text-[#171515]"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://deakzsolt-quiz.netlify.app">
                         Try it!
                       <FaPlay size={20} />
@@ -126,6 +131,7 @@ const Work = () => {
                     <a
                       className="flex justify-between items-center w-full text-[#171515]"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://deakzsolt-breakingbadfansite.netlify.app/">
                         Try it!
                       <FaPlay size={20} />
@@ -161,6 +167,7 @@ const Work = () => {
                     <a
                       className="flex justify-between items-center w-full text-[#171515]"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://deakzsolt-xo.netlify.app">
                         Try it!
                       <FaPlay size={20} />
@@ -187,6 +194,7 @@ const Work = () => {
                     <a
                       className="flex justify-between items-center w-full text-[#171515]"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/zsolt-deak/OnlineStore">
                       View on GitHub
                       <FaGithub size={30} />
@@ -197,6 +205,7 @@ const Work = () => {
                     <a
                       className="flex justify-between items-center w-full text-[#171515]"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://deakzsolt-onlinestore.netlify.app/">
                         Try it!
                       <FaPlay size={20} />
@@ -224,6 +233,7 @@ const Work = () => {
                   <a
                     className="flex justify-between items-center w-full text-[#171515]"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/zsolt-deak/Portfolio">
                     View on GitHub
                     <FaGithub size={30} />
@@ -233,7 +243,7 @@ const Work = () => {
             </div>
           </div>
 
-        </div>
+        </div></Zoom>
       </div>
     </div>
   );
