@@ -22,8 +22,6 @@ const About = () => {
               responsible for the assembly, and commissioning of assembly and packaging lines 
               in the automotive industry. For more details about my past work experience please 
               visit my <b className="z-50 text-[#0077b5]" ><a target="_blank" href="https://www.linkedin.com/in/deak-zsolt">LinkedIn profile</a></b> page.
-
-
             </p>
           </div>
         </div>
