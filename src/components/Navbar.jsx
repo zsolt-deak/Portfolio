@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     
-    <div className="md:h-[80px] bg-gradient-to-b from-[#60892fa8] via-transparent to-transparent fixed w-full h-[65px] flex justify-end items-center px-4 backdrop-blur text-[#afb9d6] border-b-2 border-b-[#61892f] z-50 ">
+    <div className="md:h-[80px] bg-gradient-to-b from-[#60892fa8] via-transparent to-transparent fixed w-full h-[65px] flex justify-end items-center px-4 backdrop-blur text-[#afb9d6] border-b-2 border-b-[#61892f] z-40 ">
       {/* / menu */}
       
       <ul className="hidden sm:flex text-3xl">

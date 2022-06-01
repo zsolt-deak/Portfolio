@@ -205,31 +205,34 @@ const Work = () => {
               </div>
             </div>
           </div>
+
+
           <div
             style={{ backgroundImage: `url(${portfolio})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="w-full h-full flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition hover:bg-[#000000ce]">
-            <span className="text-2xl font-bold text-white tracking-wider text-center">
+              <span className="text-2xl font-bold text-white tracking-wider text-center">
                 Portfolio website
               </span>
               <p className="text-l font-bold text-white tracking-wider text-center">
                 This website was made with React and Tailwind css
               </p>
               <div className="pt-8 text-center">
-              <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg ">
-                    <a
-                      className="flex justify-between items-center w-full text-[#171515]"
-                      target="_blank"
-                      href="https://github.com/zsolt-deak/Portfolio">
-                      View on GitHub
-                      <FaGithub size={30} />
-                    </a>
-                  </button>                               
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg ">
+                  <a
+                    className="flex justify-between items-center w-full text-[#171515]"
+                    target="_blank"
+                    href="https://github.com/zsolt-deak/Portfolio">
+                    View on GitHub
+                    <FaGithub size={30} />
+                  </a>
+                </button>                               
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

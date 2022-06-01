@@ -23,12 +23,12 @@ const Home = () => {
 
 
         <p className="text-[#afb9d6] py-4 max-w-[700px] lg:grid-cols-2">
-          A software developer passionately opened for a new professional
+          A passionate software developer opened for a new professional
           challenge and ready to take on responsibilities. Reliable team member
           always ready to help. Quick learner with problem-solving and
           decision-making mindset, and excellent interpersonal skills. I am
           seeking to be employed in a company where I can add value using my
-          skills and my previous professional experience
+          skills and my previous professional experience.
         </p>
 
         <div>
